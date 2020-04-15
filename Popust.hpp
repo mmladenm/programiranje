@@ -1,0 +1,7 @@
+#ifndef POPUST_HPP_INCLUDED
+#define POPUST_HPP_INCLUDED
+
+class POPUST{
+};
+
+#endif // POPUST_HPP_INCLUDED

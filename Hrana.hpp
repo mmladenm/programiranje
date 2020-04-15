@@ -1,0 +1,7 @@
+#ifndef HRANA_HPP_INCLUDED
+#define HRANA_HPP_INCLUDED
+
+class HRANA{
+};
+
+#endif // HRANA_HPP_INCLUDED

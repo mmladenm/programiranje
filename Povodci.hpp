@@ -1,0 +1,7 @@
+#ifndef POVODCI_HPP_INCLUDED
+#define POVODCI_HPP_INCLUDED
+
+class POVODCI{
+};
+
+#endif // POVODCI_HPP_INCLUDED
