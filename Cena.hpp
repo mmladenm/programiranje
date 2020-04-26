@@ -1,7 +1,0 @@
-#ifndef CENA_HPP_INCLUDED
-#define CENA_HPP_INCLUDED
-
-class CENA{
-};
-
-#endif // CENA_HPP_INCLUDED

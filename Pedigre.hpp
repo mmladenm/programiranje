@@ -1,7 +1,0 @@
-#ifndef PEDIGRE_HPP_INCLUDED
-#define PEDIGRE_HPP_INCLUDED
-
-class PEDIGRE{
-};
-
-#endif // PEDIGRE_HPP_INCLUDED
