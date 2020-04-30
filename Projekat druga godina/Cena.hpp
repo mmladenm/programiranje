@@ -1,12 +1,32 @@
 #ifndef CENA_HPP_INCLUDED
 #define CENA_HPP_INCLUDED
-#include "Pas.hpp"
-class CENA:public PAS {
+class Cena
+{
 protected:
     double cena;
+    double kurs;
+    bool nacinPlacanja;
 public:
-    CENA(double z=0, string i, PolPsa o, bool p, bool a , bool s, int d, int f, int g):PAS(i, o ,p , a , s , d , f , g ){
-    cena = z;}
-};
+    Cena(double c, double k, bool ncP)
+    {
+        cena=c;
+        kurs=k;
+        nacinPlacanja=ncP;
+    }
+    void placanje()
+    {
+        if (nacinPlacanja==true)
+            {
+            cout<<"Kupac placa kesom."<<endl;
+            cout<<"Kurs je: "<<kurs<<endl;
+            cena=cena*kurs;
+                        }
+
+            }
+        else
+        cout<<"Kupac placa karticom."<<endl;
+
+    }
+    };
 
 #endif // CENA_HPP_INCLUDED

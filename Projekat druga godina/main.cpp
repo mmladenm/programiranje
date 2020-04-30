@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    cout << "Projekat pokrenut, nema gresaka!" << endl;
+    // Cilj mog projekta je da u najrealnijem svetlu prikazem sajt za prodaju pasa.
     return 0;
 }

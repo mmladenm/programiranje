@@ -1,16 +1,17 @@
 #ifndef PAS_HPP_INCLUDED
 #define PAS_HPP_INCLUDED
-#include "PEDIGRE.HPP"
+#include "Cena.hpp"
 enum PolPsa {musko,zensko};
-class PAS
+class Pas
 {
 protected:
     string rasa;
     PolPsa pol;
-    PEDIGRE pedigre;
+    Cena C;
 public:
-    PAS(string i="",  o = musko, bool p, bool a, bool s, int d, int f, int g):pedigre(p,a,s,d,f,g){
-    rasa=i;PolPsa
-    pol=o;
-    }
+   Pas(string r, PolPsa p, double c, double k, double ncp):C(c,k,ncp)
+   {
+       rasa=r;
+       pol=p;
+   }
 #endif // PAS_HPP_INCLUDED

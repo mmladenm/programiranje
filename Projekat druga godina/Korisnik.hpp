@@ -1,7 +1,7 @@
 #ifndef KORISNIK_HPP_INCLUDED
 #define KORISNIK_HPP_INCLUDED
 
-class KORISNIK{
+class Korisnik{
 protected:
     string username;
     string password;

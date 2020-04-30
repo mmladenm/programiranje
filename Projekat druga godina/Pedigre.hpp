@@ -6,7 +6,7 @@ struct Datum
     int dan
     int godina
 }
-class PEDIGRE
+class Pedigre
 {
 protected:
     bool cistokrvnost;
@@ -15,7 +15,7 @@ protected:
     bool pasos;
     bool papiri;
 public:
-    PEDIGRE(bool p = true, bool a = true , bool s = true, int d = 1, int f = 1, int g = 2020)
+    Pedigre(bool p = true, bool a = true , bool s = true, int d = 1, int f = 1, int g = 2020)
     {
         cistokrvnost=p;
         vakcinacija=a;
