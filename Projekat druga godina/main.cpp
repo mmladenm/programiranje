@@ -5,6 +5,6 @@ using namespace std;
 int main()
 {
     cout << "Projekat pokrenut, nema gresaka!" << endl;
-    // Cilj mog projekta je da u najrealnijem svetlu prikazem sajt za prodaju pasa.
+    // Ovim projektom omogucujem koristniku da pretrazuje oglase pomocu razlicitih karakteristika.
     return 0;
 }

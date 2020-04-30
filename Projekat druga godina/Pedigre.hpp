@@ -1,11 +1,6 @@
 #ifndef PEDIGRE_HPP_INCLUDED
 #define PEDIGRE_HPP_INCLUDED
-struct Datum
-{
-    int mesec
-    int dan
-    int godina
-}
+#include "Datum.hpp"
 class Pedigre
 {
 protected:
@@ -15,14 +10,11 @@ protected:
     bool pasos;
     bool papiri;
 public:
-    Pedigre(bool p = true, bool a = true , bool s = true, int d = 1, int f = 1, int g = 2020)
+    Pedigre(bool p = true, bool a = true , bool s = true, int d = 1, int f = 1, int g = 2020): datumrodjenja(d, f, g)
     {
         cistokrvnost=p;
         vakcinacija=a;
         pasos=s;
-        datumrodjenja.dan=d ;
-        datumrodjenja.mesec=f;
-        datumrodjenja.godina=g;
     }
 };
 
