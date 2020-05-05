@@ -19,6 +19,30 @@ public:
     materijal=mt;
     pol=p;
     }
+    string getMarka()
+    {
+        return marka;
+    }
+    double getDuzina()
+    {
+        return duzina;
+    }
+    string getIme()
+    {
+        return ime;
+    }
+    BOJE getBojapovodca()
+    {
+        return bojapovodca;
+    }
+    string getMaterijal()
+    {
+        return materijal;
+    }
+    bool getPol()
+    {
+        return pol;
+    }
 
     void povodac()
     {
@@ -26,6 +50,13 @@ public:
         pol=true;
         else pol=false;
 
+    }
+    void DodajPovodacUFajl()
+    {
+        ofstream fajl;
+        fajl.open ("Povodac.txt", ios_base::app);
+        fajl << getMarka() << ";" << getDuzina() << ";" << getIme() << ";" << getBojapovodca() << ";" << getMaterijal() << ";" << getPol() <<endl;
+        fajl.close();
     }
 
 };
