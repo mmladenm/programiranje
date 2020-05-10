@@ -11,6 +11,7 @@ protected:
     int brojTelefona;
     string mailAdresa;
     int rating;
+
 };
 
 #endif // KORISNIK_HPP_INCLUDED

@@ -58,6 +58,25 @@ public:
         fajl << getMarka() << ";" << getDuzina() << ";" << getIme() << ";" << getBojapovodca() << ";" << getMaterijal() << ";" << getPol() <<endl;
         fajl.close();
     }
+    friend ostream& operator<<(ostream& izlaz, const Povodci& o){
+
+izlaz<<"Povodci - ispis"<<endl;
+
+izlaz<<"marka: "<<o.marka<<endl;
+
+izlaz<<"duzina: "<<o.duzina<<endl;
+
+izlaz<<"bojapovodca: "<<o.bojapovodca<<endl;
+
+izlaz<<"pol: "<<o.pol<<endl;
+
+izlaz<<"materijal: "<<o.materijal<<endl;
+
+izlaz<<"ime:"<<o.ime<<endl<<endl;
+
+return izlaz;
+
+}
 
 };
 #endif // POVODCI_HPP_INCLUDED

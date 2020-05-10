@@ -5,7 +5,7 @@ class Pedigre
 {
 protected:
     bool cistokrvnost;
-    Datum datumrodjenja
+    Datum datumrodjenja;
     bool vakcinacija;
     bool pasos;
     bool papiri;
@@ -16,6 +16,23 @@ public:
         vakcinacija=a;
         pasos=s;
     }
+    friend ostream& operator<<(ostream& izlaz, const Pedigre& o){
+
+izlaz<<"Pedigre - ispis"<<endl;
+
+izlaz<<"cistokrvnost: "<<o.cistokrvnost<<endl;
+
+izlaz<<"datumrodjenja: "<<o.datumrodjenja<<endl;
+
+izlaz<<"vakcinacija: "<<o.vakcinacija<<endl;
+
+izlaz<<"pasos: "<<o.pasos<<endl;
+
+izlaz<<"papiri:"<<o.papiri<<endl<<endl;
+
+return izlaz;
+
+}
 };
 
 #endif // PEDIGRE_HPP_INCLUDED

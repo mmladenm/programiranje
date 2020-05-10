@@ -14,4 +14,17 @@ public:
        rasa=r;
        pol=p;
    }
+   friend ostream& operator<<(ostream& izlaz, const Pas& o){
+
+izlaz<<"Pas - ispis"<<endl;
+
+izlaz<<"rasa: "<<o.rasa<<endl;
+
+izlaz<<"pol: "<<o.pol<<endl;
+
+izlaz<<"cena:"<<o.C<<endl<<endl;
+
+return izlaz;
+   }
+};
 #endif // PAS_HPP_INCLUDED

@@ -13,6 +13,19 @@ public:
     mesec=m;
     godina=g;
     }
+    friend ostream& operator<<(ostream& izlaz, const Datum& o){
+
+izlaz<<"Datum - ispis"<<endl;
+
+izlaz<<"dan: "<<o.dan<<endl;
+
+izlaz<<"mesec: "<<o.mesec<<endl;
+
+izlaz<<"godina:"<<o.godina<<endl<<endl;
+
+return izlaz;
+
+}
 };
 
 #endif // DATUM_HPP_INCLUDED
