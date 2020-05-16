@@ -1,7 +1,5 @@
 #ifndef ODGAJIVACNICE_HPP_INCLUDED
 #define ODGAJIVACNICE_HPP_INCLUDED
-#include "Pas.hpp"
-#include "Cena.hpp"
 class Odgajivacnice
 {
 protected:

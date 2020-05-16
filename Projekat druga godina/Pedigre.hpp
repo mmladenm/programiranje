@@ -1,6 +1,5 @@
 #ifndef PEDIGRE_HPP_INCLUDED
 #define PEDIGRE_HPP_INCLUDED
-#include "Datum.hpp"
 class Pedigre
 {
 protected:

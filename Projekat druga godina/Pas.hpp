@@ -1,6 +1,5 @@
 #ifndef PAS_HPP_INCLUDED
 #define PAS_HPP_INCLUDED
-#include "Cena.hpp"
 enum PolPsa {musko,zensko};
 class Pas
 {
@@ -14,15 +13,19 @@ public:
        rasa=r;
        pol=p;
    }
+   string getRasa()const
+   {
+    return rasa;
+   }
    friend ostream& operator<<(ostream& izlaz, const Pas& o){
 
-izlaz<<"Pas - ispis"<<endl;
+izlaz<<"Rasa: "<<o.rasa<<" ";
+if(o.pol==0)
+izlaz<<"Pol: muski ";
+else
+izlaz<<"Pol: zenski ";
 
-izlaz<<"rasa: "<<o.rasa<<endl;
-
-izlaz<<"pol: "<<o.pol<<endl;
-
-izlaz<<"cena:"<<o.C<<endl<<endl;
+izlaz<<o.C<<" ";
 
 return izlaz;
    }

@@ -26,14 +26,11 @@ public:
     }
     friend ostream& operator<<(ostream& izlaz, const Cena& o)
     {
+        izlaz<<"Cena: "<<o.cena<<" ";
 
-        izlaz<<"Cena - ispis"<<endl;
+        izlaz<<"Kurs: "<<o.kurs<<" ";
 
-        izlaz<<"cena: "<<o.cena<<endl;
-
-        izlaz<<"kurs: "<<o.kurs<<endl;
-
-        izlaz<<"nacinPlacanja:"<<o.nacinPlacanja<<endl<<endl;
+        izlaz<<"Nacin placanja: "<<o.nacinPlacanja<<" ";
 
         return izlaz;
 
