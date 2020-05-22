@@ -4,4 +4,4 @@
 class Oprema{
 };
 
-#endif // OPREMA_HPP_INCLUDED
+#endif // OPREMA_HPP_INCLUDED ,

@@ -76,4 +76,4 @@ public:
 	}
 };
 
-#endif // KORISNIK_HPP_INCLUDED
+#endif // KORISNIK_HPP_INCLUDED ,

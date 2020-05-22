@@ -27,4 +27,4 @@ return izlaz;
 }
 };
 
-#endif // DATUM_HPP_INCLUDED
+#endif // DATUM_HPP_INCLUDED ,

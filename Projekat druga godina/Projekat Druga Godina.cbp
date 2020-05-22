@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="../../../korisnici.txt" />
 		<Unit filename="Cena.hpp" />
 		<Unit filename="Datum.hpp" />
 		<Unit filename="Hrana.hpp" />

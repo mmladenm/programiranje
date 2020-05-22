@@ -4,4 +4,4 @@
 class Popust{
 };
 
-#endif // POPUST_HPP_INCLUDED
+#endif // POPUST_HPP_INCLUDED ,

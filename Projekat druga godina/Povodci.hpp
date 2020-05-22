@@ -79,4 +79,4 @@ return izlaz;
 }
 
 };
-#endif // POVODCI_HPP_INCLUDED
+#endif // POVODCI_HPP_INCLUDED ,

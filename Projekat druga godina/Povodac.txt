@@ -1,3 +1,4 @@
 nike;25.36;venom;3;koza;1nike;25.36;venom;3;koza;1
 nike;25.36;venom;3;koza;1
 nike;25.36;venom;3;koza;1
+,

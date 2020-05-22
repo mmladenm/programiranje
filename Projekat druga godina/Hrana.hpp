@@ -13,4 +13,4 @@ protected:
 
 };
 
-#endif // HRANA_HPP_INCLUDED
+#endif // HRANA_HPP_INCLUDED ,
