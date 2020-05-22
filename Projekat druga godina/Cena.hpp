@@ -1,21 +1,23 @@
 #ifndef CENA_HPP_INCLUDED
 #define CENA_HPP_INCLUDED
+enum Nacin_Placanja{kartica,kes};
 class Cena
 {
 protected:
     double cena;
     double kurs;
-    bool nacinPlacanja;
+    Nacin_Placanja nacinPlacanja;
 public:
-    Cena(double c, double k, bool ncP)
+    Cena(double c=100, double k=117, Nacin_Placanja ncP=kes)
     {
         cena=c;
         kurs=k;
         nacinPlacanja=ncP;
     }
+
     void placanje()
     {
-        if (nacinPlacanja==true)
+        if (nacinPlacanja==kes)
         {
             cout<<"Kupac placa kesom."<<endl;
             cout<<"Kurs je: "<<kurs<<endl;
@@ -30,11 +32,20 @@ public:
 
         izlaz<<"Kurs: "<<o.kurs<<" ";
 
-        izlaz<<"Nacin placanja: "<<o.nacinPlacanja<<" ";
+        if (o.nacinPlacanja==kartica)
+        {
+          izlaz<<"Nacin placanja: karticom";
+        }
+        else
+        {
+          izlaz<<"Nacin placanja: kesom";
+        }
+
 
         return izlaz;
 
     }
+        double getCena(){return cena;}
 };
 
 #endif // CENA_HPP_INCLUDED

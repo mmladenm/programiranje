@@ -10,7 +10,7 @@ protected:
     string imeOdgajivacnice;
     string adresa;
 public:
-    Odgajivacnice(string m, string iPO, int bt, string io, string a, string rr, PolPsa pp, double cc, double kk, bool ncPncP):pas(rr,pp,cc,kk,ncPncP)
+    Odgajivacnice(string m, string iPO, int bt, string io, string a, string rr, PolPsa pp, double cc, double kk, Nacin_Placanja ncPncP):pas(rr,pp,cc,kk,ncPncP)
     {
         mesto=m;
         imePrezimeOdgajivaca=iPO;
