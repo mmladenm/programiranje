@@ -38,4 +38,4 @@ return izlaz;
    }
        Cena getC(){return C;}
 };
-#endif // PAS_HPP_INCLUDED ,
+#endif // PAS_HPP_INCLUDED

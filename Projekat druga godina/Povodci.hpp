@@ -98,4 +98,4 @@ Povodci*nova=new Povodci(m,d,b,ma);
 povodac.push_back(nova);
 }
 };
-#endif // POVODCI_HPP_INCLUDED ,
+#endif // POVODCI_HPP_INCLUDED

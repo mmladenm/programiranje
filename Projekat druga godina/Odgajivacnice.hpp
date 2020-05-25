@@ -37,4 +37,4 @@ return izlaz;
 }
 
 };
-#endif // ODGAJIVACNICE_HPP_INCLUDED ,
+#endif // ODGAJIVACNICE_HPP_INCLUDED

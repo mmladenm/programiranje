@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif // OPREMA_HPP_INCLUDED ,
+#endif // OPREMA_HPP_INCLUDED

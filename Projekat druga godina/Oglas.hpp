@@ -21,4 +21,4 @@ public:
         return izlaz;
     }
 };
-#endif // OGLAS_HPP_INCLUDED ,
+#endif // OGLAS_HPP_INCLUDED

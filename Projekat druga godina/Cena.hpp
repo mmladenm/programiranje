@@ -48,4 +48,4 @@ public:
         double getCena(){return cena;}
 };
 
-#endif // CENA_HPP_INCLUDED ,
+#endif // CENA_HPP_INCLUDED

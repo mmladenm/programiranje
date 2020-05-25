@@ -34,4 +34,4 @@ return izlaz;
 }
 };
 
-#endif // PEDIGRE_HPP_INCLUDED ,
+#endif // PEDIGRE_HPP_INCLUDED
