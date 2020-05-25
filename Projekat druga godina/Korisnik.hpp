@@ -23,7 +23,7 @@ public:
 		mailAdresa="";
 		rating=0;
 	}
-	Korisnik(string u,string p,string d,bool a,bool s,int b,string m,int r)
+	Korisnik(string u="",string p="",string d="",bool a=true,bool s=true,int b=0,string m="",int r=0)
 	{
 		username=u;
 		password=p;
@@ -34,6 +34,9 @@ public:
 		mailAdresa=m;
 		rating=r;
 	}
+	Korisnik(const Korisnik &a):username(a.username), password(a.password), datumKreacije(a.datumKreacije), aktivnost(a.aktivnost), slika(a.slika), brojTelefona(a.brojTelefona), mailAdresa(a.mailAdresa), rating(a.rating){}
+	string getime()const{return username;}
+	string getmail()const{return mailAdresa;}
 	virtual void ispisPodataka()const
 	{
 		cout << endl;

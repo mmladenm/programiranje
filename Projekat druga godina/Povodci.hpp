@@ -5,20 +5,18 @@ class Povodci{
 protected:
     string marka;
     double duzina;
-    string ime;
     BOJE bojapovodca;
     string materijal;
-    bool pol;
+    vector<Povodci*>povodac;
 public:
-    Povodci(string m, double d, string i, BOJE b, string mt, bool p)
+    Povodci(string m, double d, BOJE b, string mt)
     {
     marka=m;
     duzina=d;
-    ime=i;
     bojapovodca=b;
     materijal=mt;
-    pol=p;
     }
+    vector<Povodci*>getPovodac()const{return povodac;}
     string getMarka()
     {
         return marka;
@@ -26,10 +24,6 @@ public:
     double getDuzina()
     {
         return duzina;
-    }
-    string getIme()
-    {
-        return ime;
     }
     BOJE getBojapovodca()
     {
@@ -39,23 +33,11 @@ public:
     {
         return materijal;
     }
-    bool getPol()
-    {
-        return pol;
-    }
-
-    void povodac()
-    {
-        if(bojapovodca==1 || bojapovodca==3 || bojapovodca==5)
-        pol=true;
-        else pol=false;
-
-    }
     void DodajPovodacUFajl()
     {
         ofstream fajl;
         fajl.open ("Povodac.txt", ios_base::app);
-        fajl << getMarka() << ";" << getDuzina() << ";" << getIme() << ";" << getBojapovodca() << ";" << getMaterijal() << ";" << getPol() <<endl;
+        fajl << getMarka() << ";" << getDuzina() << ";" << getBojapovodca() << ";" << getMaterijal() <<endl;
         fajl.close();
     }
     friend ostream& operator<<(ostream& izlaz, const Povodci& o){
@@ -68,15 +50,52 @@ izlaz<<"duzina: "<<o.duzina<<endl;
 
 izlaz<<"bojapovodca: "<<o.bojapovodca<<endl;
 
-izlaz<<"pol: "<<o.pol<<endl;
-
 izlaz<<"materijal: "<<o.materijal<<endl;
-
-izlaz<<"ime:"<<o.ime<<endl<<endl;
 
 return izlaz;
 
 }
-
+void ubaciPovodac()
+{
+    string m;
+    double d;
+    string bo;
+    BOJE b;
+    string ma;
+cout<<"Izaberite marku povodca(Nike, DogLowers, Puma, Hentaki)"<<endl;
+cin>>m;
+cout<<"Izaberite duzinu povodca"<<endl;
+cin>>d;
+cout<<"Izaberite boju povodca"<<endl;
+cin>>bo;
+if(bo=="plava")
+{
+    b=plava;
+}
+if(bo=="crvena")
+{
+    b=crvena;
+}
+if(bo=="crna")
+{
+    b=crna;
+}
+if(bo=="zuta")
+{
+    b=zuta;
+}
+if(bo=="bela")
+{
+    b=bela;
+}
+if(bo=="zelena")
+{
+    b=zelena;
+}
+cout<<"Izaberite materijal od koga je povodac sacinjen"<<endl;
+cin>>ma;
+Povodci*nova=new Povodci(m,d,b,ma);
+povodac.push_back(nova);
+}
 };
 #endif // POVODCI_HPP_INCLUDED ,

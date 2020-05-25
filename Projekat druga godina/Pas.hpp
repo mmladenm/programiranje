@@ -1,6 +1,5 @@
 #ifndef PAS_HPP_INCLUDED
 #define PAS_HPP_INCLUDED
-#include "Cena.hpp"
 enum PolPsa {musko,zensko};
 class Pas
 {
